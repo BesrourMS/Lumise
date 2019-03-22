@@ -3943,7 +3943,7 @@
 									el.val(cl);
 								};
 									
-								if (cl === '' || cl.indexOf('#') !== 0) {
+								if (cl === '' || cl.length != 7 || cl.indexOf('#') !== 0) {
 									e.data.el.find('.create-color-grp input[name="hex"]').shake();
 									return false;
 								} else return cl+'@'+encodeURIComponent(label);
